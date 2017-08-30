@@ -1,9 +1,13 @@
-* {
+*{
 
 	margin: 0;
 	padding:0;
 }
 
+header{
+	background-color: white;
+	height: 60px;
+}
 
 .logo{
 
@@ -12,6 +16,7 @@
 	margin-left: 60px;
 
 }
+
 .menu{
 list-style: none;
 float: right;
@@ -35,43 +40,56 @@ color: rgb(163,163,163);
 }
 
 .menu li a:hover{
-	color:    #1a5276;
-	border-bottom: 3px solid   #1a5276  ;
+	color: #1a5276;
+	/*border-bottom: 3px solid   #1a5276  ;
 	transition: all 0.5s ease-in;
-	padding:10px 0px;
+	padding:10px 0px;*/
 }
 
-.menu li input{
 
-	width: 120px;
-	transform: translateY(4px);
+.bg{
+
+	background-image: url(images_f/landing_hand_mobile.png);
+	height: 130vh;
+	background-repeat: no-repeat;
+	background-position: 100% 20%;
 }
 
+.main h1,h3,input,button{
+	position: relative;
+	top: 100px;
+	margin-left: -40px;
+
+}
 
 .main h1{
-
-	margin-top:130px;
-	margin-left:-20px;
 	font-size: 22px;
 	color: rgb(0,1,0);
 	font-family: 'Roboto Slab', serif;
 
 }
 
+
 .main h3{
-	margin-left: -20px;
 	font-size: 18px;
 	font-family: 'Roboto Slab', serif;
 	color: rgb(75,98,104);
-
 }
-
 .main input{
-	margin-left: -20px;
+	margin-left: -40px;
 	font-family: 'Roboto Slab', serif;
 	background-image: url(images_f/landing_mail_ic.png);
+	background-size:30px 18px;
+	background-position:3% 44%;
 	background-repeat: no-repeat;
-	padding-left: 36px;
+	padding-left: 39px;
+	height: 33px;
+	background-color: #ABB7B7;
+	border: none;
+}
+
+.main input:hover{
+background-color: #DADFE1;
 }
 .main button{
 	font-family: 'Roboto Slab', serif;
@@ -79,46 +97,62 @@ color: rgb(163,163,163);
 	color:rgb(255,255,255);
 	background-color:#00a0de;
 	width: 120px;
+	height: 33px;
+	margin-left: 5px;
+	border: none;
 }
 
 .main img{
-	margin-left: -240px;
-	margin-top: 70px;
-	padding-right:0;
+	position: relative;
+	margin-top: 287px;
+	margin-left: -110px;
+}
 
-	}
-
-	.cir{
-	
-	margin-left: 132px;
-	margin-top: -250px;
-	margin-bottom: -8px;
-	}
 .strip_1{
+	position: relative;
 	background-color: #013c4c;
 	width: 100%;
-	height: 150px;
-	margin-top: -12px;
+	height: 200px;
+	margin-top: -123px;
 }
 
 .strip_1 h1
 {
+	position: absolute;
 	font-size: 22px;
 	font-family: 'Roboto Slab', serif;
 	color: rgb(255,255,255);
 	text-align: center;
-}
-.strip_1 ul{
+	margin-top: 20px;
+	margin-left: 600px;
 
 
 }
+.strip_1 p{
+	font-size: 14px;
+	font-family: 'Roboto Slab', serif;
+	color: rgb(255,255,255);
+	position: absolute;
+	margin-top: 155px;
+	margin-left: 180px;
+}
+
+.setup{
+	margin-left: 243px;
+}
+
+.free{
+	margin-left: 245px;
+}
+
 .strip_1 ul li{
+
 	font-size: 14px;
 	font-family: 'Roboto Slab', serif;
 	float: left;
 	display: inline-block;
-	margin-top: 15px;
-	margin-left: 180px;
+	margin-top: 80px;
+	margin-left: 234px;
 	margin-right: 80px;
 	color:rgb(255,255,255);
 }
@@ -147,25 +181,20 @@ color: rgb(163,163,163);
 .strip_2{
 	background-color: #013c4c;
 	width: 100%;
-	height: 120px;
+	height: 175px;
 
 
 }
 
 .strip_2 p{
-	text-align:left;
-	margin-left: 20px;
-	margin-right: 20px;
+	position: absolute;
+	margin:30px 80px 30px 80px;
 	font-size: 14px;
+	text-align: justify;
 	font-family: 'Roboto Slab', serif;
 	color:rgb(255,255,255);
 }
 
-
-.menu_s li{
-	display: inline-block;
-	margin-right: 40px;
-}
 
 .foo{
 background-color: #01aee6;
@@ -176,20 +205,33 @@ margin-top: -20px;
 
 .list{
 	margin-top: -35px;
+	margin-right: 20px;
 }
 
-footer p{
-	margin-left: 20px;
+.menu_s li{
+
+	display: inline-block;
+	margin-right: 40px;
+	margin-top: 4px;
+}
+
+.foo p{
+	position: absolute;
+	margin-left: 80px;
 	font-size: 14px;
 	color: rgb(255,255,255);
 	font-family: 'Roboto Slab', serif;
+	margin-top: 23px;
 }
 
-footer .copyright{
-	margin-left: 285px;
+.copyright{
+	margin-left: 255px;
+
+
 }
 
-footer .term{
+.term{
 
-	margin-left: 40px;
+margin-left: 40px;
+
 }
