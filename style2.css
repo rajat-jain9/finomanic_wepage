@@ -1,9 +1,6 @@
-body {
-
-}
-
 section {
   height: 100vh;
+  width: 100vw;
 }
 
 section:first-of-type {
@@ -11,40 +8,100 @@ section:first-of-type {
 }
 
 .icon-bar {
-    display: inline-block;
-    cursor: pointer;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .bar1, .bar2, .bar3 {
-    width: 30px;
-    height: 3px;
-    background-color: #00a0de;
-    margin: 6px 0;
-    transition: 0.4s;
+  width: 30px;
+  height: 3px;
+  background-color: #00a0de;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-5px, 5px) ;
-    transform: rotate(-45deg) translate(-5px, 5px) ;
+  -webkit-transform: rotate(-45deg) translate(-5px, 5px) ;
+  transform: rotate(-45deg) translate(-5px, 5px) ;
 }
 
 .change .bar2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+#myNavbar {
+  font-size: 16px;
+}
+
+#myNavbar li {
+  padding: 10px;
+  padding-right: 30px;
+}
+
+#myNavbar a {
+  color: rgb(163, 163, 163);
+}
+
+.page1 {
+  background-image: url(images_f/landing_hand_mobile.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+@media (max-width:640px){
+  .page1 {
+    background-position: bottom;
+  }
+}
+
+.subscribe {
+  position: relative;
+  top: 10%;
+  left: 10%;
 }
 
 .subscribe input {
   font-family: 'Roboto Slab', serif;
   background-image: url(images_f/landing_mail_ic.png);
-  background-size:30px 18px;
-  background-position:3% 44%;
+  background-size: 25px 18px;
+  background-position: 3% 44%;
   background-repeat: no-repeat;
   padding-left: 39px;
   height: 33px;
   background-color: #EEEEEE;
   border: none;
+}
+
+.subscribe input:hover {
+  background-color: #DADFE1;
+  margin:0;
+}
+
+.intro h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 22px;
+  color: rgb(0, 1, 0);
+}
+
+.intro h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  color: rgb(75,98,104);
+}
+
+.img_circle {
+  position: absolute;
+  bottom: 0%;
+}
+
+@media (max-width:640px){
+  .img_circle {
+    display:none;
+  }
 }
