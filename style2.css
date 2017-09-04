@@ -128,6 +128,16 @@ section:first-of-type {
   }
 }
 
+.page2 {
+  height: 30vh;
+}
+
+@media (max-width:640px) {
+  .page2 {
+    height: 100vh;
+  }
+}
+
 .strip_1 {
   position: relative;
   background-color: #013c4c;
@@ -172,4 +182,108 @@ section:first-of-type {
   .free {
     top: 20%;
   }
+}
+
+.finImg {
+  position: relative;
+  background-image: url(images_f/landing_thinking_ic.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+
+@media (max-width:640px) {
+  .finImg {
+    height: 100vh;
+    background-position: bottom left;
+  }
+}
+
+.finHead {
+  font-family: 'Roboto Slab', serif;
+  font-size: 22px;
+  color: #00a0de;
+  position: relative;
+  left: 40vw;
+  top: 5vh;
+}
+
+.finImg p {
+  font-size: 15px;
+  font-family: 'Roboto Slab', serif;
+  position: relative;
+  left: 28%;
+  top: 16.5vh;
+  color: rgb(255,255,255);
+}
+
+@media (max-width:640px) {
+  .finHead {
+    left: 10vw;
+  }
+  .finImg p {
+    left: 28vw;
+    top: 34vh;
+  }
+}
+
+.site {
+  background-color: #013c4c;
+  width: 100%;
+  height: 30vh;
+  padding: 3%;
+  font-family: 'Roboto Slab', serif;
+  font-size: 28px;
+  color: rgb(255,255,255);
+}
+
+@media (max-width:640px) {
+  .site {
+    height: 90vh;
+    font-size: 22px;
+    padding: 0;
+  }
+}
+
+.foo {
+  background-color: #01aee6;
+  height: 7vh;
+}
+
+@media (max-width:640px) {
+  .foo {
+    height: 30vh;
+  }
+}
+
+.list {
+  margin-right: 26px;
+  margin-top: -24px;
+}
+
+.menu_s li {
+  position: relative;
+  display: inline-block;
+  margin-right: 40px;
+  top:0px;
+}
+
+.foo p {
+  position: relative;
+  left: 80px;
+  font-size: 14px;
+  color: rgb(255,255,255);
+  font-family: 'Roboto Slab', serif;
+  top: 23px;
+  margin: 0;
+}
+
+.copyright {
+  position: relative;
+  left: 225px;
+}
+
+.term {
+  position: relative;
+  left: 40px;
 }
