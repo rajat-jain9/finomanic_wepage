@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 section {
   height: 100vh;
   width: 100vw;
@@ -5,6 +9,14 @@ section {
 
 section:first-of-type {
   height: 90vh;
+}
+
+@media (min-width:640px) {
+  .navbar-header {
+   margin: 0 auto;
+   display: table;
+   margin-right: 50px;
+ }
 }
 
 .icon-bar {
@@ -54,9 +66,11 @@ section:first-of-type {
   background-size: contain;
 }
 
-@media (max-width:640px){
+@media (max-width:640px) {
   .page1 {
-    background-position: bottom;
+    background-image: url(images_f/landing_mobile.png);
+    background-position: bottom right;
+    background-size: auto;
   }
 }
 
@@ -64,23 +78,6 @@ section:first-of-type {
   position: relative;
   top: 10%;
   left: 10%;
-}
-
-.subscribe input {
-  font-family: 'Roboto Slab', serif;
-  background-image: url(images_f/landing_mail_ic.png);
-  background-size: 25px 18px;
-  background-position: 3% 44%;
-  background-repeat: no-repeat;
-  padding-left: 39px;
-  height: 33px;
-  background-color: #EEEEEE;
-  border: none;
-}
-
-.subscribe input:hover {
-  background-color: #DADFE1;
-  margin:0;
 }
 
 .intro h1 {
@@ -95,13 +92,84 @@ section:first-of-type {
   color: rgb(75,98,104);
 }
 
+.subscribe input {
+  font-family: 'Roboto Slab', serif;
+  background-image: url(images_f/landing_mail_ic.png);
+  background-size: 25px 18px;
+  background-position: 3% 44%;
+  background-repeat: no-repeat;
+  padding-left: 39px;
+  height: 35px;
+  background-color: #EEEEEE;
+  border: none;
+}
+
+.subscribe input:hover {
+  background-color: #DADFE1;
+  margin: 0;
+}
+
+.subscribeBtn {
+  background-color: #00a0de;
+  color: white;
+  height: 35px;
+  margin-top: -1%;
+}
+
 .img_circle {
   position: absolute;
   bottom: 0%;
 }
 
-@media (max-width:640px){
+@media (max-width:640px) {
   .img_circle {
-    display:none;
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+
+.strip_1 {
+  position: relative;
+  background-color: #013c4c;
+  width: 100%;
+  height: 30vh;
+}
+
+@media (max-width:640px) {
+  .strip_1 {
+    height: 100vh;
+  }
+}
+
+.strip_1 div {
+  font-family: 'Roboto Slab', serif;
+  color: rgb(255,255,255);
+  text-align: center;
+}
+
+.howit {
+  font-size: 22px;
+  position: relative;
+  top: 10%;
+}
+
+.features {
+  position: relative;
+  top: 20%;
+}
+
+.bank .setup .free {
+  font-size: 14px;
+}
+
+@media (max-width:640px) {
+  .features {
+    height: 75vh;
+  }
+  .setup {
+    top: 10%;
+  }
+  .free {
+    top: 20%;
   }
 }
